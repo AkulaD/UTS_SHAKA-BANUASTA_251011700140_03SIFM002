@@ -114,7 +114,7 @@
     <div class="row g-4 mt-5 justify-content-center">
         
         <div class="col-lg col-md-4 col-6">
-            <a href="{{ url('/produk?usia=bayi') }}" class="text-decoration-none">
+            <a href="{{ url('/produk') }}" class="text-decoration-none">
                 <div class="card h-100 border-0 shadow-sm text-center category-card rounded-4 py-4">
                     <div class="card-body">
                         <i class="bi bi-balloon text-success display-5 mb-3 d-block"></i>
@@ -126,7 +126,7 @@
         </div>
 
         <div class="col-lg col-md-4 col-6">
-            <a href="{{ url('/produk?usia=balita') }}" class="text-decoration-none">
+            <a href="{{ url('/produk') }}" class="text-decoration-none">
                 <div class="card h-100 border-0 shadow-sm text-center category-card rounded-4 py-4">
                     <div class="card-body">
                         <i class="bi bi-1-circle text-warning display-5 mb-3 d-block"></i>
@@ -138,7 +138,7 @@
         </div>
 
         <div class="col-lg col-md-4 col-6">
-            <a href="{{ url('/produk?usia=prasekolah') }}" class="text-decoration-none">
+            <a href="{{ url('/produk') }}" class="text-decoration-none">
                 <div class="card h-100 border-0 shadow-sm text-center category-card rounded-4 py-4">
                     <div class="card-body">
                         <i class="bi bi-brush text-danger display-5 mb-3 d-block"></i>
@@ -150,7 +150,7 @@
         </div>
 
         <div class="col-lg col-md-6 col-6">
-            <a href="{{ url('/produk?usia=sekolah') }}" class="text-decoration-none">
+            <a href="{{ url('/produk') }}" class="text-decoration-none">
                 <div class="card h-100 border-0 shadow-sm text-center category-card rounded-4 py-4">
                     <div class="card-body">
                         <i class="bi bi-mortarboard text-primary display-5 mb-3 d-block"></i>
@@ -162,7 +162,7 @@
         </div>
 
         <div class="col-lg col-md-6 col-6">
-            <a href="{{ url('/produk?usia=remaja') }}" class="text-decoration-none">
+            <a href="{{ url('/produk') }}" class="text-decoration-none">
                 <div class="card h-100 border-0 shadow-sm text-center category-card rounded-4 py-4">
                     <div class="card-body">
                         <i class="bi bi-controller text-dark display-5 mb-3 d-block"></i>
@@ -218,7 +218,7 @@
         @endforeach
     </div>
 
-    <div class="row mt-5 mb-3 align-items-center">
+    {{-- <div class="row mt-5 mb-3 align-items-center">
         <div class="col">
             <h4 class="fw-bold m-0 text-success">MAINAN BAYI</h4>
         </div>
@@ -336,7 +336,7 @@
                 </div>
             </div>
         @endforeach
-    </div>
+    </div> --}}
 
     <div class="row mt-5 pt-4 mb-2 align-items-center border-bottom pb-2">
         <div class="col">
