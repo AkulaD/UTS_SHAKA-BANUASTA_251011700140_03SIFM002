@@ -40,7 +40,7 @@
     <div class="card border-0 shadow-sm rounded-4 overflow-hidden mb-5">
         <div class="row g-0 align-items-center">
             <div class="col-md-5 p-4 p-md-5 border-end">
-                <img src="{{ asset('images/' . $product->image) }}" class="product-image-main shadow-sm" alt="{{ $product->name }}">
+                <img src="{{ asset('assets/images/' . $product->image) }}" class="product-image-main shadow-sm" alt="{{ $product->name }}">
             </div>
             
             <div class="col-md-7 p-4 p-md-5 d-flex flex-column h-100">

@@ -11,7 +11,7 @@
         transform: scale(1.05) translateY(-10px);
     }
     .poster-background {
-        background-image: url("{{ asset('images/banner.png') }}");
+        background-image: url("{{ asset('assets/images/banner.png') }}");
         background-size: cover;
         background-position: center;
         border-radius: 2rem;
@@ -81,10 +81,10 @@
             <span class="badge bg-success mb-3 px-3 py-2 rounded-pill">
                 <i class="bi bi-stars me-1"></i> Koleksi Terbaru
             </span>
-            <h1 class="display-4 fw-bold text-dark mb-3">
+            <h1 class="fw-bold text-dark mb-3">
                 Selamat Datang di <span class="text-success">Toys Station</span>
             </h1>
-            <p class="lead text-muted mb-4">
+            <p class="text-muted mb-4">
                 Temukan berbagai macam mainan edukatif, boneka lucu, dan action figure keren untuk buah hati Anda. Mainan berkualitas dengan harga terjangkau hanya di Toys Station.
             </p>
             <div class="d-flex gap-3">
@@ -189,7 +189,7 @@
             <div class="card product-card-scroll border-0 shadow-sm rounded-4">
                 <div class="position-relative">
                     <div class="product-image-wrapper">
-                        <img src="{{ asset('images/' . $toy->image) }}" alt="{{ $toy->name }}">
+                        <img src="{{ asset('assets/images/' . $toy->image) }}" alt="{{ $toy->name }}">
                     </div>
                     <span class="badge bg-danger position-absolute top-0 start-0 m-2 rounded-1">
                         <i class="bi bi-fire"></i> Baru
@@ -217,126 +217,6 @@
             </div>
         @endforeach
     </div>
-
-    {{-- <div class="row mt-5 mb-3 align-items-center">
-        <div class="col">
-            <h4 class="fw-bold m-0 text-success">MAINAN BAYI</h4>
-        </div>
-        <div class="col-auto">
-            <a href="{{ url('/produk?search=0+-+12+Bulan') }}" class="btn btn-outline-success btn-sm rounded-pill">Lihat Semua <i class="bi bi-arrow-right"></i></a>
-        </div>
-    </div>
-
-    <div class="product-scroll-container">
-        @foreach($toys->where('age_group', '0 - 12 Bulan') as $toy)
-            <div class="card product-card-scroll border-0 shadow-sm rounded-4">
-                <div class="position-relative">
-                    <div class="product-image-wrapper">
-                        <img src="{{ asset('images/' . $toy->image) }}" alt="{{ $toy->name }}">
-                    </div>
-                </div>
-                <div class="card-body p-3">
-                    <h6 class="card-title text-truncate fw-bold text-dark mb-1" title="{{ $toy->name }}">{{ $toy->name }}</h6>
-                    
-                    <div class="text-warning small mb-2">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-between mt-2">
-                        <span class="fw-bold text-success">Rp {{ number_format($toy->price, 0, ',', '.') }}</span>
-                    </div>
-                    
-                    <div class="mt-2 text-muted" style="font-size: 0.75rem;">
-                        {{ $toy->age_group }}
-                    </div>
-                </div>
-            </div>
-        @endforeach
-    </div>
-
-    <div class="row mt-5 mb-3 align-items-center">
-        <div class="col">
-            <h4 class="fw-bold m-0 text-warning">MAINAN BALITA</h4>
-        </div>
-        <div class="col-auto">
-            <a href="{{ url('/produk?search=1+-+3+Tahun') }}" class="btn btn-outline-warning btn-sm rounded-pill">Lihat Semua <i class="bi bi-arrow-right"></i></a>
-        </div>
-    </div>
-
-    <div class="product-scroll-container">
-        @foreach($toys->where('age_group', '1 - 3 Tahun') as $toy)
-            <div class="card product-card-scroll border-0 shadow-sm rounded-4">
-                <div class="position-relative">
-                    <div class="product-image-wrapper">
-                        <img src="{{ asset('images/' . $toy->image) }}" alt="{{ $toy->name }}">
-                    </div>
-                </div>
-                <div class="card-body p-3">
-                    <h6 class="card-title text-truncate fw-bold text-dark mb-1" title="{{ $toy->name }}">{{ $toy->name }}</h6>
-                    
-                    <div class="text-warning small mb-2">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-between mt-2">
-                        <span class="fw-bold text-success">Rp {{ number_format($toy->price, 0, ',', '.') }}</span>
-                    </div>
-                    
-                    <div class="mt-2 text-muted" style="font-size: 0.75rem;">
-                        {{ $toy->age_group }}
-                    </div>
-                </div>
-            </div>
-        @endforeach
-    </div>
-
-    <div class="row mt-5 mb-3 align-items-center">
-        <div class="col">
-            <h4 class="fw-bold m-0 text-danger">PRA-SEKOLAH</h4>
-        </div>
-        <div class="col-auto">
-            <a href="{{ url('/produk?search=3+-+5+Tahun') }}" class="btn btn-outline-danger btn-sm rounded-pill">Lihat Semua <i class="bi bi-arrow-right"></i></a>
-        </div>
-    </div>
-
-    <div class="product-scroll-container">
-        @foreach($toys->where('age_group', '3 - 5 Tahun') as $toy)
-            <div class="card product-card-scroll border-0 shadow-sm rounded-4">
-                <div class="position-relative">
-                    <div class="product-image-wrapper">
-                        <img src="{{ asset('images/' . $toy->image) }}" alt="{{ $toy->name }}">
-                    </div>
-                </div>
-                <div class="card-body p-3">
-                    <h6 class="card-title text-truncate fw-bold text-dark mb-1" title="{{ $toy->name }}">{{ $toy->name }}</h6>
-                    
-                    <div class="text-warning small mb-2">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                    </div>
-
-                    <div class="d-flex align-items-center justify-content-between mt-2">
-                        <span class="fw-bold text-success">Rp {{ number_format($toy->price, 0, ',', '.') }}</span>
-                    </div>
-                    
-                    <div class="mt-2 text-muted" style="font-size: 0.75rem;">
-                        {{ $toy->age_group }}
-                    </div>
-                </div>
-            </div>
-        @endforeach
-    </div> --}}
 
     <div class="row mt-5 pt-4 mb-2 align-items-center border-bottom pb-2">
         <div class="col">

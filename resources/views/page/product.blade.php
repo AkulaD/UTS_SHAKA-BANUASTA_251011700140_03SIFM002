@@ -81,7 +81,7 @@
 
 <div class="container mt-4 mb-5">
     
-    <div class="bg-white p-3 mb-4 shadow-sm rounded-3">
+    <div class="bg-white p-3 mb-4">
         <div class="row align-items-center">
             <div class="col-md-4 mb-3 mb-md-0">
                 <h4 class="fw-bold m-0 text-success">Katalog Produk</h4>
@@ -120,7 +120,7 @@
         <div class="col">
             <a href="{{ url('/produk/' . $product->id) }}" class="card h-100 custom-card rounded-3 overflow-hidden">
                 <div class="product-img-wrapper">
-                    <img src="{{ asset('images/' . $product->image) }}" alt="{{ $product->name }}">
+                    <img src="{{ asset('assets/images/' . $product->image) }}" alt="{{ $product->name }}">
                 </div>
                 <div class="card-body p-2 d-flex flex-column">
                     <div class="product-title">{{ $product->name }}</div>
@@ -142,5 +142,10 @@
         </div>
         @endforelse
     </div>
+
+    <div class="d-flex justify-content-center mt-4">
+        {{ $products->links() }}
+    </div>
+
 </div>
 @endsection

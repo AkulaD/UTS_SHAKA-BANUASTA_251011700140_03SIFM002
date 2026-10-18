@@ -5,7 +5,7 @@
     
     <div class="row mb-5">
         <div class="col-12 text-center">
-            <h1 class="display-5 fw-bold text-success mb-3">HUBUNGI & KUNJUNGI KAMI</h1>
+            <h3 class="fw-bold text-success mb-3">HUBUNGI & KUNJUNGI KAMI</h3>
             <hr class="border-success border-2 opacity-50 mx-auto" style="width: 100px;">
             <p class="text-muted mt-3">Kami siap melayani Anda di berbagai cabang Toys Station atau melalui layanan pelanggan kami.</p>
         </div>
@@ -13,7 +13,7 @@
 
     <div class="row justify-content-center mb-5">
         <div class="col-lg-10">
-            <div class="card border-0 shadow-sm rounded-4 p-4 bg-opacity-10">
+            <div class="card border-0 p-4 bg-opacity-10">
                 <div class="card-body text-center">
                     <h4 class="fw-bold text-success mb-4">Layanan Pelanggan Pusat</h4>
                     <div class="row justify-content-center g-4">
@@ -27,14 +27,6 @@
                         </div>
                         
                         <div class="col-md-4 border-start border-end border-success border-opacity-25 d-none d-md-block">
-                            <a href="https://wa.me/6289507974439" target="_blank" class="text-decoration-none text-black d-block hover-lift">
-                                <i class="bi bi-whatsapp text-success fs-1 mb-2 d-block"></i>
-                                <h6 class="fw-bold mb-1">WhatsApp</h6>
-                                <p class="text-muted mb-0">+62 812 3456 7890</p>
-                            </a>
-                        </div>
-                        
-                        <div class="col-md-4 d-block d-md-none">
                             <a href="https://wa.me/6289507974439" target="_blank" class="text-decoration-none text-black d-block hover-lift">
                                 <i class="bi bi-whatsapp text-success fs-1 mb-2 d-block"></i>
                                 <h6 class="fw-bold mb-1">WhatsApp</h6>
@@ -65,7 +57,7 @@
     <div class="row g-4">
         
         <div class="col-lg-12">
-            <div class="card border-0 shadow-sm h-100 rounded-4 p-3 border-start border-success border-4">
+            <div class="card border-0 shadow-sm h-100 rounded-4 p-3">
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <h5 class="fw-bold text-success m-0">Toys Station Pusat (Serpong)</h5>
@@ -84,7 +76,7 @@
         </div>
 
         <div class="col-lg-12">
-            <div class="card border-0 shadow-sm h-100 rounded-4 p-3 border-start border-success border-4">
+            <div class="card border-0 shadow-sm h-100 rounded-4 p-3">
                 <div class="card-body">
                     <h5 class="fw-bold text-success mb-3">Toys Station BSD City</h5>
                     <div class="mb-3">
@@ -100,7 +92,7 @@
         </div>
 
         <div class="col-lg-12">
-            <div class="card border-0 shadow-sm h-100 rounded-4 p-3 border-start border-success border-4">
+            <div class="card border-0 shadow-sm h-100 rounded-4 p-3">
                 <div class="card-body">
                     <h5 class="fw-bold text-success mb-3">Toys Station Bintaro</h5>
                     <div class="mb-3">
@@ -116,7 +108,7 @@
         </div>
 
         <div class="col-lg-12">
-            <div class="card border-0 shadow-sm h-100 rounded-4 p-3 border-start border-success border-4">
+            <div class="card border-0 shadow-sm h-100 rounded-4 p-3">
                 <div class="card-body">
                     <h5 class="fw-bold text-success mb-3">Toys Station Pamulang</h5>
                     <div class="mb-3">

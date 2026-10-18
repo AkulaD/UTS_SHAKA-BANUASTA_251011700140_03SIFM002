@@ -19,7 +19,9 @@ class ProductController extends Controller
             $query->where('category', $request->category);
         }
 
-        $products = $query->latest()->get();
+        $products = $query->latest()->paginate(10);
+
+        $products->appends($request->all());
 
         return view('page.product', compact('products'));
     }
